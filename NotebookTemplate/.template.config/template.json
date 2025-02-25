@@ -1,0 +1,13 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "MRCHysEN",
+  "classifications": [ "Common", "WPF" ],
+  "identity": "Notebooks.NotebooksWpf",
+  "name": "Project with ",
+  "shortName": "notebooks wpf",
+  "sourceName": "NotebookTemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
