@@ -3,9 +3,10 @@
   "author": "MRCHysEN",
   "classifications": [ "Common", "WPF" ],
   "identity": "Notebooks.NotebooksWpf",
-  "name": "Project with ",
+  "name": "Notebooks WPF",
   "shortName": "notebooks wpf",
   "sourceName": "NotebookTemplate",
+  "description": "Wpf with notebooks. Use for quick plots.",
   "tags": {
     "language": "C#",
     "type": "project"

@@ -8,16 +8,20 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        AddNotebooksFromFolder();
+    }
 
-        var assembly = this.GetType().Assembly;
+    private void AddNotebooksFromFolder()
+    {
+        var assembly = GetType().Assembly;
 
         var notebooks = assembly.DefinedTypes
             .Where(s => s.Name.Contains("Notebook") && char.IsDigit(s.Name.Last()))
-            .Select(s => Activator.CreateInstance(s))
+            .Select(Activator.CreateInstance)
             .Where(s => s is GeneratedNotebook)
             .Select(s => ((GeneratedNotebook)s!).CreateNotebook())
             .ToList();
-        
+
         Notebooks.AddNotebooks(notebooks);
     }
 }
